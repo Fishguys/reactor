@@ -26,7 +26,12 @@ CMakeFiles/log.dir/s07/Acceptor.cc.o
  /home/test/work/reactor/s07/SocketsOps.h
  /home/test/work/reactor/s07/TimerId.h
 CMakeFiles/log.dir/s07/Buffer.cc.o
+ /home/test/work/reactor/base/logging.h
+ /home/test/work/reactor/base/logstream.h
+ /home/test/work/reactor/base/timestamp.h
  /home/test/work/reactor/s07/Buffer.cc
+ /home/test/work/reactor/s07/Buffer.h
+ /home/test/work/reactor/s07/SocketsOps.h
 CMakeFiles/log.dir/s07/Channel.cc.o
  /home/test/work/reactor/base/logging.h
  /home/test/work/reactor/base/logstream.h

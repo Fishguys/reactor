@@ -97,6 +97,28 @@ Socket.h
 /home/test/work/reactor/s07/Socket.h
 
 /home/test/work/reactor/s07/Buffer.cc
+Buffer.h
+/home/test/work/reactor/s07/Buffer.h
+SocketsOps.h
+/home/test/work/reactor/s07/SocketsOps.h
+../base/logging.h
+/home/test/work/reactor/base/logging.h
+errno.h
+-
+memory.h
+-
+sys/uio.h
+-
+
+/home/test/work/reactor/s07/Buffer.h
+algorithm
+-
+string
+-
+vector
+-
+assert.h
+-
 
 /home/test/work/reactor/s07/Callbacks.h
 functional

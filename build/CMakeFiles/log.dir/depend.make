@@ -25,7 +25,12 @@ CMakeFiles/log.dir/s07/Acceptor.cc.o: ../s07/Socket.h
 CMakeFiles/log.dir/s07/Acceptor.cc.o: ../s07/SocketsOps.h
 CMakeFiles/log.dir/s07/Acceptor.cc.o: ../s07/TimerId.h
 
+CMakeFiles/log.dir/s07/Buffer.cc.o: ../base/logging.h
+CMakeFiles/log.dir/s07/Buffer.cc.o: ../base/logstream.h
+CMakeFiles/log.dir/s07/Buffer.cc.o: ../base/timestamp.h
 CMakeFiles/log.dir/s07/Buffer.cc.o: ../s07/Buffer.cc
+CMakeFiles/log.dir/s07/Buffer.cc.o: ../s07/Buffer.h
+CMakeFiles/log.dir/s07/Buffer.cc.o: ../s07/SocketsOps.h
 
 CMakeFiles/log.dir/s07/Channel.cc.o: ../base/logging.h
 CMakeFiles/log.dir/s07/Channel.cc.o: ../base/logstream.h
