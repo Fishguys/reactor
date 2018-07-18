@@ -1,0 +1,3 @@
+/home/test/work/reactor/build/CMakeFiles/edit_cache.dir
+/home/test/work/reactor/build/CMakeFiles/rebuild_cache.dir
+/home/test/work/reactor/build/CMakeFiles/log.dir

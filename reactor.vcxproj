@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0DF78200-CA6C-4092-84D9-EED9973ACB34}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="base\logging.cpp" />
+    <ClCompile Include="base\logstream.cpp" />
+    <ClCompile Include="base\main.cpp" />
+    <ClCompile Include="base\timestamp.cpp" />
+    <ClCompile Include="build\cmakefiles\3.5.1\compileridcxx\CMakeCXXCompilerId.cpp" />
+    <ClCompile Include="build\cmakefiles\3.5.1\compileridc\CMakeCCompilerId.c" />
+    <ClCompile Include="build\cmakefiles\feature_tests.c" />
+    <ClCompile Include="build\cmakefiles\feature_tests.cxx" />
+    <ClCompile Include="s00\EventLoop.cc" />
+    <ClCompile Include="s00\test1.cc" />
+    <ClCompile Include="s00\test2.cc" />
+    <ClCompile Include="s01\Channel.cc" />
+    <ClCompile Include="s01\EventLoop.cc" />
+    <ClCompile Include="s01\Poller.cc" />
+    <ClCompile Include="s01\test3.cc" />
+    <ClCompile Include="s02\Channel.cc" />
+    <ClCompile Include="s02\EventLoop.cc" />
+    <ClCompile Include="s02\Poller.cc" />
+    <ClCompile Include="s02\test3.cc" />
+    <ClCompile Include="s02\test4.cc" />
+    <ClCompile Include="s02\Timer.cc" />
+    <ClCompile Include="s02\TimerQueue.cc" />
+    <ClCompile Include="s03\Channel.cc" />
+    <ClCompile Include="s03\EventLoop.cc" />
+    <ClCompile Include="s03\EventLoopThread.cc" />
+    <ClCompile Include="s03\Poller.cc" />
+    <ClCompile Include="s03\test3.cc" />
+    <ClCompile Include="s03\test4.cc" />
+    <ClCompile Include="s03\test5.cc" />
+    <ClCompile Include="s03\test6.1.cc" />
+    <ClCompile Include="s03\test6.2.cc" />
+    <ClCompile Include="s03\Timer.cc" />
+    <ClCompile Include="s03\TimerQueue.cc" />
+    <ClCompile Include="s04\Acceptor.cc" />
+    <ClCompile Include="s04\Channel.cc" />
+    <ClCompile Include="s04\EventLoop.cc" />
+    <ClCompile Include="s04\EventLoopThread.cc" />
+    <ClCompile Include="s04\InetAddress.cc" />
+    <ClCompile Include="s04\Poller.cc" />
+    <ClCompile Include="s04\Socket.cc" />
+    <ClCompile Include="s04\SocketsOps.cc" />
+    <ClCompile Include="s04\test3.cc" />
+    <ClCompile Include="s04\test4.cc" />
+    <ClCompile Include="s04\test5.cc" />
+    <ClCompile Include="s04\test6.1.cc" />
+    <ClCompile Include="s04\test6.2.cc" />
+    <ClCompile Include="s04\test7.cc" />
+    <ClCompile Include="s04\Timer.cc" />
+    <ClCompile Include="s04\TimerQueue.cc" />
+    <ClCompile Include="s05\Acceptor.cc" />
+    <ClCompile Include="s05\Channel.cc" />
+    <ClCompile Include="s05\EventLoop.cc" />
+    <ClCompile Include="s05\EventLoopThread.cc" />
+    <ClCompile Include="s05\InetAddress.cc" />
+    <ClCompile Include="s05\Poller.cc" />
+    <ClCompile Include="s05\Socket.cc" />
+    <ClCompile Include="s05\SocketsOps.cc" />
+    <ClCompile Include="s05\TcpConnection.cc" />
+    <ClCompile Include="s05\TcpServer.cc" />
+    <ClCompile Include="s05\test3.cc" />
+    <ClCompile Include="s05\test4.cc" />
+    <ClCompile Include="s05\test5.cc" />
+    <ClCompile Include="s05\test6.1.cc" />
+    <ClCompile Include="s05\test6.2.cc" />
+    <ClCompile Include="s05\test7.cc" />
+    <ClCompile Include="s05\test8.cc" />
+    <ClCompile Include="s05\Timer.cc" />
+    <ClCompile Include="s05\TimerQueue.cc" />
+    <ClCompile Include="s06\Acceptor.cc" />
+    <ClCompile Include="s06\Channel.cc" />
+    <ClCompile Include="s06\EventLoop.cc" />
+    <ClCompile Include="s06\EventLoopThread.cc" />
+    <ClCompile Include="s06\InetAddress.cc" />
+    <ClCompile Include="s06\Poller.cc" />
+    <ClCompile Include="s06\Socket.cc" />
+    <ClCompile Include="s06\SocketsOps.cc" />
+    <ClCompile Include="s06\TcpConnection.cc" />
+    <ClCompile Include="s06\TcpServer.cc" />
+    <ClCompile Include="s06\test3.cc" />
+    <ClCompile Include="s06\test4.cc" />
+    <ClCompile Include="s06\test5.cc" />
+    <ClCompile Include="s06\test6.1.cc" />
+    <ClCompile Include="s06\test6.2.cc" />
+    <ClCompile Include="s06\test7.cc" />
+    <ClCompile Include="s06\test8.6.cc" />
+    <ClCompile Include="s06\test8.cc" />
+    <ClCompile Include="s06\Timer.cc" />
+    <ClCompile Include="s06\TimerQueue.cc" />
+    <ClCompile Include="s07\Acceptor.cc" />
+    <ClCompile Include="s07\Buffer.cc" />
+    <ClCompile Include="s07\Channel.cc" />
+    <ClCompile Include="s07\EventLoop.cc" />
+    <ClCompile Include="s07\EventLoopThread.cc" />
+    <ClCompile Include="s07\InetAddress.cc" />
+    <ClCompile Include="s07\Poller.cc" />
+    <ClCompile Include="s07\Socket.cc" />
+    <ClCompile Include="s07\SocketsOps.cc" />
+    <ClCompile Include="s07\TcpConnection.cc" />
+    <ClCompile Include="s07\TcpServer.cc" />
+    <ClCompile Include="s07\test3.cc" />
+    <ClCompile Include="s07\test4.cc" />
+    <ClCompile Include="s07\test5.cc" />
+    <ClCompile Include="s07\test6.1.cc" />
+    <ClCompile Include="s07\test6.2.cc" />
+    <ClCompile Include="s07\test7.cc" />
+    <ClCompile Include="s07\test8.6.cc" />
+    <ClCompile Include="s07\test8.cc" />
+    <ClCompile Include="s07\Timer.cc" />
+    <ClCompile Include="s07\TimerQueue.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base\logging.h" />
+    <ClInclude Include="base\logstream.h" />
+    <ClInclude Include="base\singleton.h" />
+    <ClInclude Include="base\timestamp.h" />
+    <ClInclude Include="s00\EventLoop.h" />
+    <ClInclude Include="s01\Channel.h" />
+    <ClInclude Include="s01\EventLoop.h" />
+    <ClInclude Include="s01\Poller.h" />
+    <ClInclude Include="s02\Callbacks.h" />
+    <ClInclude Include="s02\Channel.h" />
+    <ClInclude Include="s02\EventLoop.h" />
+    <ClInclude Include="s02\Poller.h" />
+    <ClInclude Include="s02\Timer.h" />
+    <ClInclude Include="s02\TimerId.h" />
+    <ClInclude Include="s02\TimerQueue.h" />
+    <ClInclude Include="s03\Callbacks.h" />
+    <ClInclude Include="s03\Channel.h" />
+    <ClInclude Include="s03\EventLoop.h" />
+    <ClInclude Include="s03\EventLoopThread.h" />
+    <ClInclude Include="s03\Poller.h" />
+    <ClInclude Include="s03\Timer.h" />
+    <ClInclude Include="s03\TimerId.h" />
+    <ClInclude Include="s03\TimerQueue.h" />
+    <ClInclude Include="s04\Acceptor.h" />
+    <ClInclude Include="s04\Callbacks.h" />
+    <ClInclude Include="s04\Channel.h" />
+    <ClInclude Include="s04\EventLoop.h" />
+    <ClInclude Include="s04\EventLoopThread.h" />
+    <ClInclude Include="s04\InetAddress.h" />
+    <ClInclude Include="s04\Poller.h" />
+    <ClInclude Include="s04\Socket.h" />
+    <ClInclude Include="s04\SocketsOps.h" />
+    <ClInclude Include="s04\Timer.h" />
+    <ClInclude Include="s04\TimerId.h" />
+    <ClInclude Include="s04\TimerQueue.h" />
+    <ClInclude Include="s05\Acceptor.h" />
+    <ClInclude Include="s05\Callbacks.h" />
+    <ClInclude Include="s05\Channel.h" />
+    <ClInclude Include="s05\EventLoop.h" />
+    <ClInclude Include="s05\EventLoopThread.h" />
+    <ClInclude Include="s05\InetAddress.h" />
+    <ClInclude Include="s05\Poller.h" />
+    <ClInclude Include="s05\Socket.h" />
+    <ClInclude Include="s05\SocketsOps.h" />
+    <ClInclude Include="s05\TcpConnection.h" />
+    <ClInclude Include="s05\TcpServer.h" />
+    <ClInclude Include="s05\Timer.h" />
+    <ClInclude Include="s05\TimerId.h" />
+    <ClInclude Include="s05\TimerQueue.h" />
+    <ClInclude Include="s06\Acceptor.h" />
+    <ClInclude Include="s06\Callbacks.h" />
+    <ClInclude Include="s06\Channel.h" />
+    <ClInclude Include="s06\EventLoop.h" />
+    <ClInclude Include="s06\EventLoopThread.h" />
+    <ClInclude Include="s06\InetAddress.h" />
+    <ClInclude Include="s06\Poller.h" />
+    <ClInclude Include="s06\Socket.h" />
+    <ClInclude Include="s06\SocketsOps.h" />
+    <ClInclude Include="s06\TcpConnection.h" />
+    <ClInclude Include="s06\TcpServer.h" />
+    <ClInclude Include="s06\Timer.h" />
+    <ClInclude Include="s06\TimerId.h" />
+    <ClInclude Include="s06\TimerQueue.h" />
+    <ClInclude Include="s07\Acceptor.h" />
+    <ClInclude Include="s07\Buffer.h" />
+    <ClInclude Include="s07\Callbacks.h" />
+    <ClInclude Include="s07\Channel.h" />
+    <ClInclude Include="s07\EventLoop.h" />
+    <ClInclude Include="s07\EventLoopThread.h" />
+    <ClInclude Include="s07\InetAddress.h" />
+    <ClInclude Include="s07\Poller.h" />
+    <ClInclude Include="s07\Socket.h" />
+    <ClInclude Include="s07\SocketsOps.h" />
+    <ClInclude Include="s07\TcpConnection.h" />
+    <ClInclude Include="s07\TcpServer.h" />
+    <ClInclude Include="s07\Timer.h" />
+    <ClInclude Include="s07\TimerId.h" />
+    <ClInclude Include="s07\TimerQueue.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build\cmakefiles\3.5.1\CMakeDetermineCompilerABI_C.bin" />
+    <None Include="build\cmakefiles\3.5.1\CMakeDetermineCompilerABI_CXX.bin" />
+    <None Include="build\cmakefiles\feature_tests.bin" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,2 @@
+用法：logging类包含timestamp，用于打印日志时间，包含logstream，包括一个缓冲区，以及对缓冲区的基本操作，
+插入字符串等，logging定义了打印日志用法，通过log类setOutput可设置日志的输出方式，默认打印到终端
