@@ -88,6 +88,7 @@ CMakeFiles/log.dir/s07/TcpConnection.cc.o
  /home/test/work/reactor/base/logging.h
  /home/test/work/reactor/base/logstream.h
  /home/test/work/reactor/base/timestamp.h
+ /home/test/work/reactor/s07/Buffer.h
  /home/test/work/reactor/s07/Callbacks.h
  /home/test/work/reactor/s07/Channel.h
  /home/test/work/reactor/s07/EventLoop.h
@@ -102,6 +103,7 @@ CMakeFiles/log.dir/s07/TcpServer.cc.o
  /home/test/work/reactor/base/logstream.h
  /home/test/work/reactor/base/timestamp.h
  /home/test/work/reactor/s07/Acceptor.h
+ /home/test/work/reactor/s07/Buffer.h
  /home/test/work/reactor/s07/Callbacks.h
  /home/test/work/reactor/s07/Channel.h
  /home/test/work/reactor/s07/EventLoop.h
@@ -128,14 +130,13 @@ CMakeFiles/log.dir/s07/TimerQueue.cc.o
  /home/test/work/reactor/s07/TimerId.h
  /home/test/work/reactor/s07/TimerQueue.cc
  /home/test/work/reactor/s07/TimerQueue.h
-CMakeFiles/log.dir/s07/test8.cc.o
- /home/test/work/reactor/base/logging.h
- /home/test/work/reactor/base/logstream.h
+CMakeFiles/log.dir/s07/test8.6.cc.o
  /home/test/work/reactor/base/timestamp.h
+ /home/test/work/reactor/s07/Buffer.h
  /home/test/work/reactor/s07/Callbacks.h
  /home/test/work/reactor/s07/EventLoop.h
  /home/test/work/reactor/s07/InetAddress.h
  /home/test/work/reactor/s07/TcpConnection.h
  /home/test/work/reactor/s07/TcpServer.h
  /home/test/work/reactor/s07/TimerId.h
- /home/test/work/reactor/s07/test8.cc
+ /home/test/work/reactor/s07/test8.6.cc

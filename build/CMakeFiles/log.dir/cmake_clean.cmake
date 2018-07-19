@@ -15,7 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/log.dir/s07/Acceptor.cc.o"
   "CMakeFiles/log.dir/s07/TcpConnection.cc.o"
   "CMakeFiles/log.dir/s07/TcpServer.cc.o"
-  "CMakeFiles/log.dir/s07/test8.cc.o"
+  "CMakeFiles/log.dir/s07/test8.6.cc.o"
   "log.pdb"
   "log"
 )

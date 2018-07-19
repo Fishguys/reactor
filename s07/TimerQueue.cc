@@ -99,7 +99,6 @@ TimerQueue::~TimerQueue()
 	}
 }
 
-
 TimerId TimerQueue::addTimer(const TimerCallback& cb,
                              Timestamp when,
                              double interval)

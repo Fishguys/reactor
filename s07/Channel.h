@@ -2,7 +2,7 @@
 #define NET_CHANNEL_H
 
 #include <functional>
-
+class Timestamp;
 class EventLoop;
 //Channel 通过enableXXX类函数来注册fd上的新事件
 ///
@@ -15,12 +15,12 @@ class Channel
 {
 public:
 	typedef std::function<void()> EventCallback;
-
+	typedef std::function<void(Timestamp)> ReadEventCallback;
 	Channel(EventLoop* loop, int fd);
 	~Channel();
 
-	void handleEvent();
-	void setReadCallback(const EventCallback& cb)
+	void handleEvent(Timestamp receiveTime);
+	void setReadCallback(const ReadEventCallback& cb)
 	{ readCallback_ = cb; }
 	void setWriteCallback(const EventCallback& cb)
 	{ writeCallback_ = cb; }
@@ -34,10 +34,10 @@ public:
 	bool isNoneEvent() const { return events_ == kNoneEvent; }
 
 	void enableReading() { events_ |= kReadEvent; update(); }
-	// void enableWriting() { events_ |= kWriteEvent; update(); }
-	// void disableWriting() { events_ &= ~kWriteEvent; update(); }
+	void enableWriting() { events_ |= kWriteEvent; update(); }
+	void disableWriting() { events_ &= ~kWriteEvent; update(); }
 	void disableAll() { events_ = kNoneEvent; update(); }
-
+	boll isWriting()const{ return events_ & kWriteEvent; }
 	// for Poller
 	int index() { return index_; }
 	void set_index(int idx) { index_ = idx; }
@@ -60,7 +60,7 @@ private:
 
 	bool eventHandling_;
 
-	EventCallback readCallback_;
+	ReadEventCallback readCallback_;
 	EventCallback writeCallback_;
 	EventCallback errorCallback_;
 	EventCallback closeCallback_;

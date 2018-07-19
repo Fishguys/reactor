@@ -18,7 +18,7 @@ s07/Socket.cc
 s07/Acceptor.cc
 s07/TcpConnection.cc
 s07/TcpServer.cc
-s07/test8.cc
+s07/test8.6.cc
 )
 
 MESSAGE(STATUS "This is BINARY dir" ${PROJECT_BINARY_DIR})

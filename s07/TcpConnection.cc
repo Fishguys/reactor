@@ -7,6 +7,7 @@
 #include "SocketsOps.h"
 #include <unistd.h>
 
+using namespace std::placeholders;		//bind
 TcpConnection::TcpConnection(EventLoop* loop,
 		const std::string& name,
 		int sockfd,
@@ -22,7 +23,7 @@ TcpConnection::TcpConnection(EventLoop* loop,
 	{
 		LOG_DEBUG << "TcpConnection::ctor[" << m_strName << "] at "
 				  << this << " fd=" << sockfd;
-		m_pChannel->setReadCallback(std::bind(&TcpConnection::handleRead, this));
+		m_pChannel->setReadCallback(std::bind(&TcpConnection::handleRead, this,_1));
 		m_pChannel->setWriteCallback(std::bind(&TcpConnection::handleWrite,this));
 		m_pChannel->setErrorCallback(std::bind(&TcpConnection::handleError,this));
 		m_pChannel->setCloseCallback(std::bind(&TcpConnection::handleClose,this));
@@ -33,18 +34,21 @@ TcpConnection::~TcpConnection()
 	LOG_DEBUG << "TcpConnection::dtor[" << m_strName << "] at "
 				  << this << " fd=" << m_pChannel->fd();
 }
-
-void TcpConnection::handleRead()
+//ÕâÀï´ýÍêÉÆ
+void TcpConnection::handleRead(Timestamp receiveTime)
 {
-	char buf[65536];
-	ssize_t n = ::read(m_pChannel->fd(), buf, sizeof(buf));
+	int savedErrno = 0;
+	ssize_t n = m_inputBuffer.readFd(m_pChannel->fd(), &savedErrno);
+
 	if (n > 0){
-		m_msgCallback(shared_from_this(), buf, n);
+		m_msgCallback(shared_from_this(), &m_inputBuffer, receiveTime);
 	}
 	else if (0 == n){
 		handleClose();
 	}
 	else{
+		errno = savedErrno;
+		LOG_SYSERR << "TcpConnection::handleRead";
 		handleError();
 	}
 	

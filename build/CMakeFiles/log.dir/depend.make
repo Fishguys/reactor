@@ -87,6 +87,7 @@ CMakeFiles/log.dir/s07/SocketsOps.cc.o: ../s07/SocketsOps.h
 CMakeFiles/log.dir/s07/TcpConnection.cc.o: ../base/logging.h
 CMakeFiles/log.dir/s07/TcpConnection.cc.o: ../base/logstream.h
 CMakeFiles/log.dir/s07/TcpConnection.cc.o: ../base/timestamp.h
+CMakeFiles/log.dir/s07/TcpConnection.cc.o: ../s07/Buffer.h
 CMakeFiles/log.dir/s07/TcpConnection.cc.o: ../s07/Callbacks.h
 CMakeFiles/log.dir/s07/TcpConnection.cc.o: ../s07/Channel.h
 CMakeFiles/log.dir/s07/TcpConnection.cc.o: ../s07/EventLoop.h
@@ -101,6 +102,7 @@ CMakeFiles/log.dir/s07/TcpServer.cc.o: ../base/logging.h
 CMakeFiles/log.dir/s07/TcpServer.cc.o: ../base/logstream.h
 CMakeFiles/log.dir/s07/TcpServer.cc.o: ../base/timestamp.h
 CMakeFiles/log.dir/s07/TcpServer.cc.o: ../s07/Acceptor.h
+CMakeFiles/log.dir/s07/TcpServer.cc.o: ../s07/Buffer.h
 CMakeFiles/log.dir/s07/TcpServer.cc.o: ../s07/Callbacks.h
 CMakeFiles/log.dir/s07/TcpServer.cc.o: ../s07/Channel.h
 CMakeFiles/log.dir/s07/TcpServer.cc.o: ../s07/EventLoop.h
@@ -128,14 +130,13 @@ CMakeFiles/log.dir/s07/TimerQueue.cc.o: ../s07/TimerId.h
 CMakeFiles/log.dir/s07/TimerQueue.cc.o: ../s07/TimerQueue.cc
 CMakeFiles/log.dir/s07/TimerQueue.cc.o: ../s07/TimerQueue.h
 
-CMakeFiles/log.dir/s07/test8.cc.o: ../base/logging.h
-CMakeFiles/log.dir/s07/test8.cc.o: ../base/logstream.h
-CMakeFiles/log.dir/s07/test8.cc.o: ../base/timestamp.h
-CMakeFiles/log.dir/s07/test8.cc.o: ../s07/Callbacks.h
-CMakeFiles/log.dir/s07/test8.cc.o: ../s07/EventLoop.h
-CMakeFiles/log.dir/s07/test8.cc.o: ../s07/InetAddress.h
-CMakeFiles/log.dir/s07/test8.cc.o: ../s07/TcpConnection.h
-CMakeFiles/log.dir/s07/test8.cc.o: ../s07/TcpServer.h
-CMakeFiles/log.dir/s07/test8.cc.o: ../s07/TimerId.h
-CMakeFiles/log.dir/s07/test8.cc.o: ../s07/test8.cc
+CMakeFiles/log.dir/s07/test8.6.cc.o: ../base/timestamp.h
+CMakeFiles/log.dir/s07/test8.6.cc.o: ../s07/Buffer.h
+CMakeFiles/log.dir/s07/test8.6.cc.o: ../s07/Callbacks.h
+CMakeFiles/log.dir/s07/test8.6.cc.o: ../s07/EventLoop.h
+CMakeFiles/log.dir/s07/test8.6.cc.o: ../s07/InetAddress.h
+CMakeFiles/log.dir/s07/test8.6.cc.o: ../s07/TcpConnection.h
+CMakeFiles/log.dir/s07/test8.6.cc.o: ../s07/TcpServer.h
+CMakeFiles/log.dir/s07/test8.6.cc.o: ../s07/TimerId.h
+CMakeFiles/log.dir/s07/test8.6.cc.o: ../s07/test8.6.cc
 

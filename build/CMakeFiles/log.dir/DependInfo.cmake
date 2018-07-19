@@ -20,7 +20,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/test/work/reactor/s07/TcpServer.cc" "/home/test/work/reactor/build/CMakeFiles/log.dir/s07/TcpServer.cc.o"
   "/home/test/work/reactor/s07/Timer.cc" "/home/test/work/reactor/build/CMakeFiles/log.dir/s07/Timer.cc.o"
   "/home/test/work/reactor/s07/TimerQueue.cc" "/home/test/work/reactor/build/CMakeFiles/log.dir/s07/TimerQueue.cc.o"
-  "/home/test/work/reactor/s07/test8.cc" "/home/test/work/reactor/build/CMakeFiles/log.dir/s07/test8.cc.o"
+  "/home/test/work/reactor/s07/test8.6.cc" "/home/test/work/reactor/build/CMakeFiles/log.dir/s07/test8.6.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

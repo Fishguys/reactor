@@ -441,28 +441,28 @@ CMakeFiles/log.dir/s07/TcpServer.cc.o.provides: CMakeFiles/log.dir/s07/TcpServer
 CMakeFiles/log.dir/s07/TcpServer.cc.o.provides.build: CMakeFiles/log.dir/s07/TcpServer.cc.o
 
 
-CMakeFiles/log.dir/s07/test8.cc.o: CMakeFiles/log.dir/flags.make
-CMakeFiles/log.dir/s07/test8.cc.o: ../s07/test8.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/test/work/reactor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/log.dir/s07/test8.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/log.dir/s07/test8.cc.o -c /home/test/work/reactor/s07/test8.cc
+CMakeFiles/log.dir/s07/test8.6.cc.o: CMakeFiles/log.dir/flags.make
+CMakeFiles/log.dir/s07/test8.6.cc.o: ../s07/test8.6.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/test/work/reactor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/log.dir/s07/test8.6.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/log.dir/s07/test8.6.cc.o -c /home/test/work/reactor/s07/test8.6.cc
 
-CMakeFiles/log.dir/s07/test8.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/log.dir/s07/test8.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/test/work/reactor/s07/test8.cc > CMakeFiles/log.dir/s07/test8.cc.i
+CMakeFiles/log.dir/s07/test8.6.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/log.dir/s07/test8.6.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/test/work/reactor/s07/test8.6.cc > CMakeFiles/log.dir/s07/test8.6.cc.i
 
-CMakeFiles/log.dir/s07/test8.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/log.dir/s07/test8.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/test/work/reactor/s07/test8.cc -o CMakeFiles/log.dir/s07/test8.cc.s
+CMakeFiles/log.dir/s07/test8.6.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/log.dir/s07/test8.6.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/test/work/reactor/s07/test8.6.cc -o CMakeFiles/log.dir/s07/test8.6.cc.s
 
-CMakeFiles/log.dir/s07/test8.cc.o.requires:
+CMakeFiles/log.dir/s07/test8.6.cc.o.requires:
 
-.PHONY : CMakeFiles/log.dir/s07/test8.cc.o.requires
+.PHONY : CMakeFiles/log.dir/s07/test8.6.cc.o.requires
 
-CMakeFiles/log.dir/s07/test8.cc.o.provides: CMakeFiles/log.dir/s07/test8.cc.o.requires
-	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/s07/test8.cc.o.provides.build
-.PHONY : CMakeFiles/log.dir/s07/test8.cc.o.provides
+CMakeFiles/log.dir/s07/test8.6.cc.o.provides: CMakeFiles/log.dir/s07/test8.6.cc.o.requires
+	$(MAKE) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/s07/test8.6.cc.o.provides.build
+.PHONY : CMakeFiles/log.dir/s07/test8.6.cc.o.provides
 
-CMakeFiles/log.dir/s07/test8.cc.o.provides.build: CMakeFiles/log.dir/s07/test8.cc.o
+CMakeFiles/log.dir/s07/test8.6.cc.o.provides.build: CMakeFiles/log.dir/s07/test8.6.cc.o
 
 
 # Object files for target log
@@ -483,7 +483,7 @@ log_OBJECTS = \
 "CMakeFiles/log.dir/s07/Acceptor.cc.o" \
 "CMakeFiles/log.dir/s07/TcpConnection.cc.o" \
 "CMakeFiles/log.dir/s07/TcpServer.cc.o" \
-"CMakeFiles/log.dir/s07/test8.cc.o"
+"CMakeFiles/log.dir/s07/test8.6.cc.o"
 
 # External object files for target log
 log_EXTERNAL_OBJECTS =
@@ -504,7 +504,7 @@ log: CMakeFiles/log.dir/s07/Socket.cc.o
 log: CMakeFiles/log.dir/s07/Acceptor.cc.o
 log: CMakeFiles/log.dir/s07/TcpConnection.cc.o
 log: CMakeFiles/log.dir/s07/TcpServer.cc.o
-log: CMakeFiles/log.dir/s07/test8.cc.o
+log: CMakeFiles/log.dir/s07/test8.6.cc.o
 log: CMakeFiles/log.dir/build.make
 log: CMakeFiles/log.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/test/work/reactor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable log"
@@ -531,7 +531,7 @@ CMakeFiles/log.dir/requires: CMakeFiles/log.dir/s07/Socket.cc.o.requires
 CMakeFiles/log.dir/requires: CMakeFiles/log.dir/s07/Acceptor.cc.o.requires
 CMakeFiles/log.dir/requires: CMakeFiles/log.dir/s07/TcpConnection.cc.o.requires
 CMakeFiles/log.dir/requires: CMakeFiles/log.dir/s07/TcpServer.cc.o.requires
-CMakeFiles/log.dir/requires: CMakeFiles/log.dir/s07/test8.cc.o.requires
+CMakeFiles/log.dir/requires: CMakeFiles/log.dir/s07/test8.6.cc.o.requires
 
 .PHONY : CMakeFiles/log.dir/requires
 

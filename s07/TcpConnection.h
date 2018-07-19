@@ -1,6 +1,7 @@
 #ifndef NET_TCPCONNECTION_H
 #define NET_TCPCONNECTION_H
 
+#include "Buffer.h"
 #include "Callbacks.h"
 #include "InetAddress.h"
 
@@ -38,10 +39,11 @@ public:
 	// called when TcpServer has removed me from its map
 	void connectDestroyed();  // should be called only once
 private:
-	enum StateE { kConnecting, kConnected, kDisconnected};
+	//kConnection:未连接，kConnected：已连接，kDisconnecting：shutDown办关闭，kDisconnected:已关闭
+	enum StateE { kConnecting, kConnected, kDisconnecting, kDisconnected};
 	
 	void setState(StateE s){ m_state = s; }
-	void handleRead();
+	void handleRead(Timestamp receiveTime);
 	void handleWrite();
 	void handleClose();
 	void handleError();
@@ -57,5 +59,6 @@ private:
 	ConnectionCallback m_connCallback;
 	MessageCallback m_msgCallback;
 	CloseCallback m_closeCallback;
+	Buffer m_inputBuffer;
 };
 #endif //NET_TCPCONNECTION_H

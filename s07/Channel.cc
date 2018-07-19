@@ -29,7 +29,7 @@ void Channel::update()
 	loop_->updateChannel(this);
 }
 
-void Channel::handleEvent()
+void Channel::handleEvent(Timestamp receiveTime)
 {
 	eventHandling_ = true;
 	if (revents_ & POLLNVAL)		//文件描述符没有打开
@@ -50,7 +50,7 @@ void Channel::handleEvent()
 	//POLLRDHUP它在socket上接收到对方关闭连接的请求之后触发。使用此事件需要在代码最开始处定义_GNU_SOURCE
 	if (revents_ & (POLLIN | POLLPRI | POLLRDHUP))
 	{
-		if (readCallback_) readCallback_();
+		if (readCallback_) readCallback_(receiveTime);
 	}
 	
 	if (revents_ & POLLOUT)
